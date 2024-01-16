@@ -5,12 +5,13 @@ import { PianoKeyboardComponent } from './piano-keyboard.component';
 import { RouterModule } from '@angular/router';
 import { pianoKeyboardRoutes } from './piano-keyboard.route';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PurchasePianoKeyboardFormComponent } from './purchase-piano-keyboard-form/purchase-piano-keyboard-form.component';
 
 
 
 @NgModule({
   declarations: [
-    PianoKeyboardComponent, PurchasePianoKeyboardComponent
+    PianoKeyboardComponent, PurchasePianoKeyboardComponent, PurchasePianoKeyboardFormComponent
   ],
   imports: [
     CommonModule,

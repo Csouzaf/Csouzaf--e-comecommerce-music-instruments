@@ -5,12 +5,13 @@ import { SoundBoxComponent } from './sound-box.component';
 import { soundBoxRoutes } from './sound-box.route';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { PurchaseSoundBoxFormComponent } from './purchase-sound-box-form/purchase-sound-box-form.component';
 
 
 
 @NgModule({
   declarations: [
-    SoundBoxComponent, PurchaseSoundBoxComponent
+    SoundBoxComponent, PurchaseSoundBoxComponent, PurchaseSoundBoxFormComponent
   ],
   imports: [
     CommonModule,

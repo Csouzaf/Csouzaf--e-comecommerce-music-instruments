@@ -6,12 +6,13 @@ import { WindInstrumentComponent } from './wind-instrument.component';
 import { windInstrumentRoutes } from './wind-instrument.route';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PurchaseWindInstrumentFormComponent } from './purchase-wind-instrument-form/purchase-wind-instrument-form.component';
 
 
 
 @NgModule({
   declarations: [
-   WindInstrumentComponent, PurchaseWindInstrumentComponent
+   WindInstrumentComponent, PurchaseWindInstrumentComponent, PurchaseWindInstrumentFormComponent
   ],
   imports: [
     CommonModule,

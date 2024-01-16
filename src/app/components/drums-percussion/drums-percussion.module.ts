@@ -5,11 +5,12 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { drumsPercussionRoutes } from './drums-percussion.router';
+import { PurchaseDrumsPercussionFormComponent } from './purchase-drums-percussion-form/purchase-drums-percussion-form.component';
 
 
 @NgModule({
   declarations: [
-    PurchaseDrumsPercussionComponent, DrumsPercussionComponent
+    PurchaseDrumsPercussionComponent, DrumsPercussionComponent, PurchaseDrumsPercussionFormComponent
   ],
   imports: [
     CommonModule,

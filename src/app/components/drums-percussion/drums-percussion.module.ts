@@ -1,15 +1,21 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { PurchaseDrumsPercussionComponent } from './purchase-drums-percussion/purchase-drums-percussion.component';
-
+import { DrumsPercussionComponent } from './drums-percussion.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { drumsPercussionRoutes } from './drums-percussion.router';
 
 
 @NgModule({
   declarations: [
-    PurchaseDrumsPercussionComponent
+    PurchaseDrumsPercussionComponent, DrumsPercussionComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule.forChild(drumsPercussionRoutes),
   ]
 })
 export class DrumsPercussionModule { }

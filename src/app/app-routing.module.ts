@@ -1,7 +1,5 @@
-import { DrumsPercussionModule } from './components/drums-percussion/drums-percussion.module';
-import { NgModule } from '@angular/core';
-import {RouterModule, Routes } from '@angular/router';
-import { HomeModule } from './components/home/home.module';
+import { Routes } from '@angular/router';
+
 
 export const AppRoutes: Routes = [
   {
@@ -13,12 +11,22 @@ export const AppRoutes: Routes = [
       {
         path:'home', loadChildren:() => import('./components/home/home.module').then((m => m.HomeModule))
       },
-      // {
-      //   path:'drums-percussion', loadChildren:() => import('./components/drums-percussion/drums-percussion.component').then((m) => m.DrumsPercussionModule)
-      // },
-      // {
-      //   path:'drums-percussion', loadChildren:() => import('./components/home/home.component').then((m => m.HomeComponent))
-      // }
+      {
+        path:'drums-percussion', loadChildren:() => import('./components/drums-percussion/drums-percussion.module').then((m) => m.DrumsPercussionModule)
+      },
+      {
+        path:'piano-keyboard', loadChildren:() => import('./components/piano-keyboard/piano-keyboard.module').then((m) => m.PianoKeyboardModule)
+      },
+      {
+        path:'sound-box', loadChildren:() => import('./components/sound-box/sound-box.module').then((m) => m.SoundBoxModule)
+      },
+      {
+        path:'string-instrument', loadChildren:() => import('./components/string-instrument/string-instrument.module').then((m) => m.StringInstrumentModule)
+      },
+      {
+        path:'wind-instrument', loadChildren:() => import('./components/wind-instrument/wind-instrument.module').then((m) => m.WindInstrumentModule)
+      },
+
     ]
 
   }
